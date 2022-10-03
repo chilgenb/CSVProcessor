@@ -1,6 +1,5 @@
 package com.hilgenberg.csvprocessor.model;
-
-public class RecordModel {
+public class RecordModel{
     private String userId;
     private String name;
 
@@ -54,11 +53,6 @@ public class RecordModel {
 
     @Override
     public String toString() {
-        return "CSVFile{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", version=" + version +
-                ", insuranceCompanyName='" + insuranceCompanyName + '\'' +
-                '}';
+        return userId + ", " + name + ", " + version + ", " + insuranceCompanyName;
     }
 }
