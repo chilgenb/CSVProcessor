@@ -1,12 +1,24 @@
 package com.hilgenberg.csvprocessor.model;
 
-public class Record {
+public class RecordModel {
     private String userId;
     private String name;
 
     private int version;
 
     private String insuranceCompanyName;
+
+    public RecordModel() {
+        super();
+    }
+
+    public RecordModel(String userId, String name, int version, String insuranceCompanyName) {
+        this();
+        this.userId = userId;
+        this.name = name;
+        this.version = version;
+        this.insuranceCompanyName = insuranceCompanyName;
+    }
 
     public String getUserId() {
         return userId;
