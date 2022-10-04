@@ -17,7 +17,6 @@ public class CSVService {
     private String startingFile;
     @Value("${csvProcessor.processedFileLocation}")
     private String processedPath;
-    //private  String finalFileName = processedPath + LocalDateTime.now().toString() + ".csv";
 
     public void processFile() {
         List<RecordModel> records = readFile();
