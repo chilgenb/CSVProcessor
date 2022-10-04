@@ -3,7 +3,7 @@ public class RecordModel{
     private String userId;
     private String name;
 
-    private int version;
+    private String version;
 
     private String insuranceCompanyName;
 
@@ -11,7 +11,7 @@ public class RecordModel{
         super();
     }
 
-    public RecordModel(String userId, String name, int version, String insuranceCompanyName) {
+    public RecordModel(String userId, String name, String version, String insuranceCompanyName) {
         this();
         this.userId = userId;
         this.name = name;
@@ -35,11 +35,11 @@ public class RecordModel{
         this.name = name;
     }
 
-    public int getVersion() {
+    public String getVersion() {
         return version;
     }
 
-    public void setVersion(int version) {
+    public void setVersion(String version) {
         this.version = version;
     }
 
